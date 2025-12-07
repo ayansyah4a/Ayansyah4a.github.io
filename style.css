@@ -1,36 +1,89 @@
+/* Background galaxy */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("galaxy.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Card utama */
+.card {
+    background: rgba(255,0,0,0.1);
+    width: 330px;
+    padding: 20px;
+    border-radius: 25px;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    animation: float 4s ease-in-out infinite;
 }
 
-p {
-    font-size: 14px;
-    color: #666;
+/* Gambar profil */
+.profile-img {
+    width: 100%;
+    border-radius: 20px;
     margin-bottom: 20px;
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.container {
-    width: 400px;
-    margin: 5px auto;
-    text-align: center;
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    
+/* Nama */
+h1 {
+    color: white;
+    font-size: 28px;
+    margin: 10px 0 0 0;
+    animation: fadeInUp 1.2s ease;
 }
 
-img {
-    width: 620px;
-    height: 340px;
-    
+/* Jurusan */
+.jurusan {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 600;
+    animation: fadeInUp 1.4s ease;
 }
 
+/* Tombol email */
+.email-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 35px;
+    background: rgb(255, 0, 0);
+    color: yellow;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    box-shadow: 0 0 15px black;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Animasi glow */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px yellow; }
+    100% { box-shadow: 0 0 20px yellow; }
+}
+
+/* Animasi melayang */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Fade in dari bawah */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
