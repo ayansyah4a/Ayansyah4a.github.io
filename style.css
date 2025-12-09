@@ -23,8 +23,9 @@ body {
 }
 
 /* Gambar profil */
-.profile-img {
-    width: 100%;
+.ph1 {
+    width: 270px;
+    height: 140px;
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -48,14 +49,14 @@ h1 {
 }
 
 /* Tombol email */
-.email-btn {
+.link-btn {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px 35px;
     background: rgb(255, 0, 0);
     color: yellow;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 17px;
     border-radius: 15px;
     text-decoration: none;
     letter-spacing: 3px;
